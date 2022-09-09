@@ -50,7 +50,7 @@ const Dashboard = () => {
   return (
     <div className="mt-20 grid grid-cols-1 md:grid-cols-2">
       <div>
-        <h1 className="text-3xl font-bold p-4 "> Investment vs Sell</h1>
+        <h1 className="text-3xl font-bold p-4 text-orange-500 "> Investment vs Sell</h1>
         <BarChart width={800} height={350} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
@@ -62,7 +62,7 @@ const Dashboard = () => {
         </BarChart>
       </div>
       <div>
-        <h1 className="text-3xl font-bold p-4">Revenue</h1>
+        <h1 className="text-3xl font-bold p-4 text-orange-500">Revenue</h1>
       <PieChart width={800} height={350}>
   <Pie data={data} dataKey="Revenue" nameKey="name" cx="50%" cy="50%" fill="blue" outerRadius={100} label  />
   <Tooltip></Tooltip>
