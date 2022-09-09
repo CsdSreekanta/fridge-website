@@ -1,6 +1,8 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Fridge-Website
+ With a  view to creating a review website, I had started my project.
+ 1. First I created a navbar after that home page done with three customer review.     2.Here I used useNavigate to go to review page. In project I used hooks for rendering to home and also review page and showed six review. 
+ 3.After I completed dashboard part with the help of react recharts. 
+ 4. Here I created bar chart and pie chart. In blog components I answered two question and finally I adit readme file. 
 
 ## Available Scripts
 
