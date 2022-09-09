@@ -48,10 +48,10 @@ const Dashboard = () => {
     },
   ];
   return (
-    <div className="mt-20 grid grid-cols-1 md:grid-cols-2">
+    <div className="mt-20 grid sm:grid-cols-1 md:grid-cols-2">
       <div>
         <h1 className="text-3xl font-bold p-4 text-orange-500 "> Investment vs Sell</h1>
-        <BarChart width={800} height={350} data={data}>
+        <BarChart width={700} height={250} data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
