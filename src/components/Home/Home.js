@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useProducts from '../../hooks/useProducts';
 import Details from '../Details/Details';
 import walton from '../images/walton.jpg'
@@ -10,7 +11,8 @@ import walton from '../images/walton.jpg'
 const Home = () => {
 
     const [products, setProducts] = useProducts();
-   
+    const navigate= useNavigate()                
+    
    
     return (
        <div>
@@ -34,6 +36,8 @@ const Home = () => {
            </div>
            
         </div>
+        <button onClick={()=> navigate("/review")} className='my-10 font-bold text-xl text-white bg-orange-500 px-8 py-3 rounded shadow-lg'>See All Reviews</button>
+
        </div>
         
     );

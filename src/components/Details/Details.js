@@ -9,8 +9,8 @@ const Details = ({product}) => {
             <h1 className='text-2xl text-blue-500 mt-10'>{name}</h1>
             <p>{review}</p>
             <h2>Rating:{Rating}</h2>
-            
         </div>
+        
     );
 };
 
