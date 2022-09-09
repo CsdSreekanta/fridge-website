@@ -1,7 +1,17 @@
 import React from 'react';
+import useProducts from '../../hooks/useProducts';
+import Details from '../Details/Details';
 import walton from '../images/walton.jpg'
 
+
+
+
+
 const Home = () => {
+
+    const [products, setProducts] = useProducts();
+   
+   
     return (
        <div>
          <div className='grid grid-cols-1 mt-5 p-4 md:grid-cols-2'>
@@ -16,6 +26,13 @@ const Home = () => {
         </div>
         <div>
             <h1 className='text-center text-3xl font-bold text-orange-500 p-4'> Customer Review (3)</h1>
+           <div className='border-4 mt-12 p-3 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 '>
+         {
+          products.slice(0, 3).map(product=><Details key={product.id} product={product}></Details>)
+            
+         }
+           </div>
+           
         </div>
        </div>
         
