@@ -4,6 +4,8 @@
  3.After I completed dashboard part with the help of react recharts. 
  4. Here I created bar chart and pie chart. In blog components I answered two question and finally I adit readme file. 
 
+ Live site: https://verdant-bienenstitch-f11823.netlify.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
